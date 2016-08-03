@@ -17,6 +17,7 @@ aa.each do |arr|
       file.write "ORG:" + arr[1] + "\n"
       file.write "TEL;type=CELL;type=VOICE;type=pref:+86 " + arr[2] + "\n"
       file.write "TEL;type=WORK;type=VOICE:" + arr[3] + "\n"
+      file.write "TEL;type=WORK;type=VOICE:" + arr[4] + "\n" if arr[4]
       file.write "REV:" + timenow + "\n"
       file.write "END:VCARD\n"
   end
